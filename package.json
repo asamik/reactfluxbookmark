@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "setup": "rm -rf public/vendor node_modules && npm i && jspm i"
+    "setup": "rm -rf public/vendor node_modules && npm install && jspm install",
     "start": "node app.js",
-    "postinstall": "jspm i"
+    "postinstall": "jspm install"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
