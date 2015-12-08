@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "setup": "npm install && jspm install",
+    "setup": "npm install",
     "start": "node app.js",
     "postinstall": "jspm install"
   },
@@ -13,9 +13,9 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "jspm": "^0.16.15",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
-    "jspm": "^0.16.15"
+    "serve-favicon": "~2.3.0"
   },
   "engines": {
     "node": "5.0.0"
