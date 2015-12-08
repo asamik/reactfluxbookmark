@@ -1,3 +1,6 @@
+"use strict";
+var PORT = (process.env.PORT || 3000)
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -56,3 +59,7 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+app.listen(PORT, function(){
+  console.log('Listening on port ', PORT);
+});
