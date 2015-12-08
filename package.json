@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "setup": "npm install",
+    "setup": "npm install && jspm install",
     "start": "node app.js",
     "postinstall": "jspm install"
   },
