@@ -17,7 +17,7 @@
     "serve-favicon": "~2.3.0",
     "jspm": "^0.16.15"
   },
-    "engines": {
+  "engines": {
     "node": "5.0.0"
   },
   "jspm": {
@@ -29,7 +29,8 @@
       "flux": "npm:flux@^2.1.1",
       "jquery": "github:components/jquery@^2.1.4",
       "react": "npm:react@^0.14.3",
-      "react-dom": "npm:react-dom@^0.14.3"
+      "react-dom": "npm:react-dom@^0.14.3",
+      "systemjs": "npm:systemjs@^0.19.6"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
