@@ -10,11 +10,20 @@ let ServerActions = {
       links
     });
   },
+  deleteLink(id) {
+    console.log("6. In ServerActions.deleteLink()", id);
+    // Tell everyone about it.
+    AppDispatcher.dispatch({
+      actionType: ActionTypes.DELETE_LINK,
+      id
+    });
+  },
   receiveOneLink(link) {
+    console.log("receiveOneLink working @ServerActions")
     // Tell everyone about it.
     AppDispatcher.dispatch({
       actionType: ActionTypes.RECEIVE_ONE_LINK,
-      link
+      link: link
     });
   }
 };

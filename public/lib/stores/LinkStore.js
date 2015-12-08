@@ -17,9 +17,22 @@ class LinkStore extends EventEmitter {
           _links = action.links;
           this.emit("CHANGE");
           break;
+
+        case ActionTypes.DELETE_LINK:
+          console.log("7. We received news about the data to be deleted", action.id.idToBeDeleted);
+          // account for the new data;
+          let newlinks = _links.filter(link => {
+           return Number(link.id) !== Number(action.id.linkidToBeDeleted)
+          })
+          _links = newlinks
+
+          this.emit("CHANGE");
+          break;
+
         case ActionTypes.RECEIVE_ONE_LINK:
             console.log("We received news about the new link", action);
             // account for the new data;
+            console.log("link", action.link)
             _links.push(action.link);
             this.emit("CHANGE");
             break;
